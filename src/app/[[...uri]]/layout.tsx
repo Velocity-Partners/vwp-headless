@@ -58,7 +58,7 @@ export default async function Layout({
 	const footerProps =
 		footerPromise.status === 'fulfilled' ? footerPromise.value : null;
 
-	const languageCode = 'FR'; // TODO: get from next i18n
+	const languageCode = 'EN'; // TODO: get from next i18n
 
 	return (
 		<html

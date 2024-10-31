@@ -15,7 +15,7 @@
     "logs": "docker compose logs -f",
     "build": "NEXT_PUBLIC_IS_THIS_NEXT=false NODE_ENV=production webpack",
     "generate:pot": "wp i18n make-pot ./theme theme/languages/supt.pot",
-    "generate:json": "wp i18n make-json ./theme/languages/fr_FR.po --no-purge",
+    "generate:json": "wp i18n make-json ./theme/languages/en_GB.po --no-purge",
     "analyze": "ANALYZE=true NODE_ENV=production webpack"
   },
   "devDependencies": {

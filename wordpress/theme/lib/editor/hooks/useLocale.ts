@@ -9,7 +9,7 @@ declare global {
 /**
  * Retrieve the current locale in WordPress editor
  */
-export const useLocale = (dflt = 'fr') =>
+export const useLocale = (dflt = 'en') =>
 	useMemo(
 		() => window?.pll_block_editor_plugin_settings?.lang?.slug ?? dflt,
 		[dflt]

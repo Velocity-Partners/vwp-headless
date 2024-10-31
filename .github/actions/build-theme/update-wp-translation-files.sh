@@ -11,7 +11,7 @@
 
 # vars
 ASSETS_MANIFEST_FILE="./wordpress/theme/static/manifest.json" # file is automatically created inside the static folder when we build our theme assets
-SUPT_TRANSLATION_FILE_FR=$(find ./wordpress/theme/languages -type f -name '*supt-fr_FR-*.json') # find file which contains supt-fr_FR in it (which is the FR of the JSON translation file)
+SUPT_TRANSLATION_FILE_FR=$(find ./wordpress/theme/languages -type f -name '*supt-en_GB-*.json') # find file which contains supt-en_GB in it (which is the EN of the JSON translation file)
 
 # Get data from Manifest file
 ASSETS_MANIFEST_DATA=$(cat "$ASSETS_MANIFEST_FILE" | jq '."editor.js"');
@@ -30,4 +30,4 @@ MD5_NAME=$(echo -n static/$ASSETS_MANIFEST_DATA_FORMATTED | openssl md5)
 MD5_NAME_FORMATTED=${MD5_NAME#*= }
 
 # Rename file to match WP requested filename
-mv $SUPT_TRANSLATION_FILE_FR ./wordpress/theme/languages/supt-fr_FR-$MD5_NAME_FORMATTED.json
+mv $SUPT_TRANSLATION_FILE_FR ./wordpress/theme/languages/supt-en_GB-$MD5_NAME_FORMATTED.json

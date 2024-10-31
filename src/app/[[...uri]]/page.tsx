@@ -36,7 +36,7 @@ export async function generateMetadata({
 
 	let auth = {};
 
-	const languageCode = 'FR'; // TODO: get from next i18n
+	const languageCode = 'EN'; // TODO: get from next i18n
 
 	const baseUrl =
 		process.env.NEXT_URL ??
@@ -143,7 +143,7 @@ export default async function Page({ params }: { params: { uri: string[] } }) {
 	);
 	let auth: { authToken?: string } = {};
 
-	const languageCode = 'FR'; // TODO: get from next i18n
+	const languageCode = 'EN'; // TODO: get from next i18n
 
 	if (isDraftModeEnable) {
 		// We are now in dynamic rendering

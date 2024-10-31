@@ -18,7 +18,7 @@ function set_polylang_defaults() {
 		$model = new \PLL_Admin_Model( $config );
 		// hint: see add_language function definition at https://github.com/polylang/polylang/blob/master/admin/admin-model.php#L10-L30
 		$model->add_language([ 'name' => 'English', 'slug' => 'en', 'locale' => 'en_US' ]);
-		$model->add_language([ 'name' => 'Français', 'slug' => 'fr', 'locale' => 'fr_FR' ]);
+		$model->add_language([ 'name' => 'Français', 'slug' => 'en', 'locale' => 'en_GB' ]);
 	}
 
 	// override/enforce a few polylang configs
