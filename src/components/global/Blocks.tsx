@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 
+import { CoreBlockHelper } from '../atoms/CoreBlockHelper2';
 import {
 	Button,
 	Checkbox,
@@ -27,6 +28,11 @@ import {
 const blocksList: BlocksType = {
 	'core/heading': Heading,
 	'core/list': List,
+
+	'core/image': CoreBlockHelper,
+	'core/table': CoreBlockHelper,
+	'core/buttons': CoreBlockHelper,
+
 	'core/list-item': ListItem,
 	'core/paragraph': Paragraph,
 
