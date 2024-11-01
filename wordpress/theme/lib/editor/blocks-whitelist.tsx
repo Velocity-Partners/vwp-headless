@@ -27,12 +27,12 @@ const BlocksWhitelist = (): JSX.Element | null => {
 					blockType as WpBlockType<any>['settings']
 				).postTypes?.includes(postType)
 			) {
-				const block = unregisterBlockType(blockType.name);
-				if (block) {
-					//@ts-ignore // .parent is readOnly but we ignore it anyway
-					block.parent = [];
-					registerBlockType(blockType.name, block);
-				}
+				// const block = unregisterBlockType(blockType.name);
+				// if (block) {
+				// 	//@ts-ignore // .parent is readOnly but we ignore it anyway
+				// 	block.parent = [];
+				// 	registerBlockType(blockType.name, block);
+				// }
 			}
 		});
 	}, []);

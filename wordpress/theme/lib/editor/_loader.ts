@@ -130,26 +130,26 @@ const excludedBlockGroups = [
 	'polylang/',
 ];
 
-domReady(() => {
-	// Unregister some core blocks
-	const blockTypes = getBlockTypes();
-	blockTypes.forEach((block: any) => {
-		if (!block?.name) return; // should not happen
-		if (excludedBlocks.includes(block.name))
-			unregisterBlockType(block.name);
-		excludedBlockGroups.forEach((group) => {
-			if (block.name.startsWith(group)) unregisterBlockType(block.name);
-		});
-	});
+// domReady(() => {
+// 	// Unregister some core blocks
+// 	const blockTypes = getBlockTypes();
+// 	blockTypes.forEach((block: any) => {
+// 		if (!block?.name) return; // should not happen
+// 		if (excludedBlocks.includes(block.name))
+// 			unregisterBlockType(block.name);
+// 		excludedBlockGroups.forEach((group) => {
+// 			if (block.name.startsWith(group)) unregisterBlockType(block.name);
+// 		});
+// 	});
 
-	// Remove format type unwanted/unneeded
-	window.wp.data
-		.dispatch('core/rich-text')
-		.removeFormatTypes([
-			'core/strikethrough',
-			'core/image',
-			'core/code',
-			'core/text-color',
-			'core/keyboard',
-		]);
-});
+// 	// Remove format type unwanted/unneeded
+// 	window.wp.data
+// 		.dispatch('core/rich-text')
+// 		.removeFormatTypes([
+// 			'core/strikethrough',
+// 			'core/image',
+// 			'core/code',
+// 			'core/text-color',
+// 			'core/keyboard',
+// 		]);
+// });
