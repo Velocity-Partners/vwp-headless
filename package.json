@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.10.1",
+    "@wordpress/block-library": "^9.11.0",
     "classnames": "^2.5.1",
     "filesize": "^10.1.0",
     "js-cookie": "^3.0.5",
@@ -40,6 +41,7 @@
     "@types/react-dom": "^18",
     "@types/sprintf-js": "^1.1.4",
     "@types/wordpress__block-editor": "^11.5.15",
+    "@types/wordpress__block-library": "^2.6.3",
     "@types/wordpress__blocks": "^12.5.13",
     "@wordpress/api-fetch": "^7.4.0",
     "eslint": "^8",
